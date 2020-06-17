@@ -5,3 +5,7 @@
 - Center Start Button
 - Add Screen Capture
 - Add GameScene
+
+### Day 4
+- Add Preload and Loading Scene
+- Add Background
