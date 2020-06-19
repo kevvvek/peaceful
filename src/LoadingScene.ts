@@ -3,9 +3,11 @@ export class LoadingScene extends Phaser.Scene {
         this.scale.scaleMode = Phaser.Scale.ScaleModes.RESIZE;
     }
     preload() {
-        this.load.image("background", "./unsplash/isaac-quesada-1AyqZcC7zSg-unsplash.jpg");
+        this.load.image("background", "unsplash/isaac-quesada-1AyqZcC7zSg-unsplash.jpg");
     }
     create() {
-        this.scene.start("main");
+        setTimeout(() => {
+            this.scene.start("main");
+        }, 1000);
     }
 }

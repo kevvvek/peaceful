@@ -1,13 +1,16 @@
+import { BaseScene } from "./BaseScene";
 
-export default class MainScene extends Phaser.Scene {
+export default class MainScene extends BaseScene {
     constructor() {
         super("main");
     }
     create() {
-        this.add.image(0, 0, "background").setOrigin(0.5, 0.5);
+        this.addBackground("background");
+        // this.add.image(0, 0, "background").setOrigin(0.5, 0.5);
 
         const start = this.add.text(this.game.canvas.width / 2, this.game.canvas.height / 2, 'Start', { color: '#fff', align: "center" }).setOrigin(0.5, 0.5);
         start.setInteractive();
+
         start.on("pointerup", () => {
             this.game.scene.start("game");
         });

@@ -1,13 +1,14 @@
+import { BaseScene } from "./BaseScene";
 
-export class PreloadScene extends Phaser.Scene {
+export class PreloadScene extends BaseScene {
     init() {
         this.scale.scaleMode = Phaser.Scale.ScaleModes.RESIZE;
     }
     preload() {
-        this.load.image("splash", "./splash.jpg");
+        this.load.image("splash", "splash.jpg");
     }
     create() {
-        this.add.image(0, 0, "splash").setOrigin(0.5, 0.5);
-        this.game.scene.start("loading");
+        this.addBackground("splash");
+        this.scene.start("loading");
     }
 }

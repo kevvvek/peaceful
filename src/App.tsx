@@ -15,7 +15,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const config: Phaser.Types.Core.GameConfig = {
-      type: Phaser.AUTO,
+      type: Phaser.CANVAS,
       height: 1080,
       width: 1920,
       scale: {
