@@ -5,10 +5,9 @@ import { useEffect } from 'react';
 
 import "phaser";
 import MainScene from './MainScene';
-import { MainPage } from './MainPage';
-import { GameScene } from './GameScene';
-import { PreloadScene } from './PreloadScene';
-import { LoadingScene } from './LoadingScene';
+import GameScene from './GameScene';
+import PreloadScene from './PreloadScene';
+import LoadingScene from './LoadingScene';
 
 const App: React.FC = () => {
   const app = React.createRef<HTMLDivElement>();

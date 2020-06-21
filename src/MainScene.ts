@@ -1,4 +1,5 @@
 import { BaseScene } from "./BaseScene";
+import { GameManager } from "./GameManager";
 
 export default class MainScene extends BaseScene {
     constructor() {
@@ -6,15 +7,15 @@ export default class MainScene extends BaseScene {
     }
     create() {
         this.addBackground("background");
-        // this.add.image(0, 0, "background").setOrigin(0.5, 0.5);
-
-        const start = this.add.text(this.game.canvas.width / 2, this.game.canvas.height / 2, 'Start', { color: '#fff', align: "center" }).setOrigin(0.5, 0.5);
-        start.setInteractive();
+        const start = this.addButton(0.5, "Start");
 
         start.on("pointerup", () => {
-            this.game.scene.start("game");
+            const gameManager = new GameManager();
+            gameManager.loadDefault();
+            this.game.scene.start("game", gameManager);
         });
 
+        // print screen
         window.onkeyup = (e: any) => {
             if (e.keyCode === 44) {
                 this.game.renderer.snapshot((arg) => {
