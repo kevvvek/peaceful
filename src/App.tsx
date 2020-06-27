@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import "phaser";
 import MainScene from './MainScene';
 import GameScene from './GameScene';
-import PreloadScene from './PreloadScene';
+import BootstrapScene from './BootstrapScene';
 import LoadingScene from './LoadingScene';
 
 const App: React.FC = () => {
@@ -19,10 +19,13 @@ const App: React.FC = () => {
       width: 1920,
       scale: {
         mode: Phaser.Scale.ScaleModes.RESIZE,
+      },
+      render: {
+        pixelArt: true
       }
     }
     const game = new Phaser.Game(config);
-    game.scene.add("preload", PreloadScene);
+    game.scene.add("preload", BootstrapScene);
     game.scene.add("loading", LoadingScene);
     game.scene.add("main", MainScene);
     game.scene.add("game", GameScene);
