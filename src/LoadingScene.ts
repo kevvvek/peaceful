@@ -12,6 +12,12 @@ export default class LoadingScene extends BaseScene {
 
         this.load.spritesheet("world", "assets/Pipoya RPG World Tileset 48x48 40x40 32x32/32x32/pipo-map001.png",
             { frameWidth: 32 });
+
+        this.load.tilemapTiledJSON('map', 'maps/200710.json');
+        this.load.image('tiles', 'assets/Pipoya RPG World Tileset 48x48 40x40 32x32/32x32/pipo-map001.png');
+
+        // const map = this.make.tilemap({ key: "map" });
+        // const layer = map.createStaticLayer(0, "pipo-map001", 0, 0);
     }
     create() {
         setTimeout(() => {

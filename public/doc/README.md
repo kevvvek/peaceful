@@ -13,3 +13,7 @@
 
 ### Day 5
 [https://phaser.io/news/2018/09/how-to-create-a-turn-based-rpg-in-phaser-3]
+
+### Day 6
+- Create a map
+[https://www.mapeditor.org/]
