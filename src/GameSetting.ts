@@ -1,7 +1,9 @@
 export default class GameSetting {
     column: number = 0
     row: number = 0
+
     tiles: GameTile[] = []
+
 
     initialize() {
         for (let x = 0; x < this.column; x++) {
@@ -16,8 +18,19 @@ export default class GameSetting {
     }
 }
 
-class GameTile {
+export class GameTile {
     x: number = 0
     y: number = 0
+    terrane?: GameTerrane
+    building?: GameBuilding
+}
+
+class GameTerrane {
+    terraneCode: string = ""
+}
+
+class GameBuilding {
+    buildingCode: string = ""
+    player: number = 0
 }
 

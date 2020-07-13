@@ -2,7 +2,7 @@ import { BaseScene } from "./BaseScene";
 
 export default class LoadingScene extends BaseScene {
     init() {
-        this.scale.scaleMode = Phaser.Scale.ScaleModes.RESIZE;
+        //this.scale.scaleMode = Phaser.Scale.ScaleModes.RESIZE;
     }
     preload() {
         this.addBackground("splash");
@@ -11,7 +11,7 @@ export default class LoadingScene extends BaseScene {
         this.load.image("tile", "assets/last-guardian-sprites/man4_fr1.gif");
 
         this.load.spritesheet("world", "assets/Pipoya RPG World Tileset 48x48 40x40 32x32/32x32/pipo-map001.png",
-            { frameWidth: 32 });
+            { frameWidth: 32, frameHeight: 32 });
 
         this.load.tilemapTiledJSON('map', 'maps/200710.json');
         this.load.image('tiles', 'assets/Pipoya RPG World Tileset 48x48 40x40 32x32/32x32/pipo-map001.png');

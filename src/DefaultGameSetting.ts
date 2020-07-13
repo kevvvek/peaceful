@@ -3,9 +3,73 @@ import GameSetting from "./GameSetting";
 export default class DefaultGameSetting extends GameSetting {
     constructor() {
         super();
-        this.column = 3;
-        this.row = 4;
-        this.tiles = [];
+        this.column = 11;
+        this.row = 20;
+        this.tiles = [
+            { x: 0, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 1, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 2, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 3, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 4, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 5, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 6, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 7, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 8, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 9, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 0, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 1, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 1, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 2, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 2, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 3, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 3, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 4, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 4, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 5, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 5, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 6, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 6, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 7, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 7, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 8, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 8, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 9, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 9, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 10, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 10, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 11, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 11, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 12, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 12, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 13, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 13, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 14, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 14, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 15, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 15, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 16, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 16, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 17, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 17, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 18, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 18, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 1, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 2, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 3, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 4, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 5, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 6, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 7, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 8, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 9, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 10, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 0, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 5, y: 2, building: { buildingCode: "Castle", player: 0 } },
+            { x: 0, y: 19, terrane: { terraneCode: "Tree" } },
+            { x: 5, y: 17, building: { buildingCode: "Castle", player: 1 } },
+        ];
+
 
         this.initialize();
     }

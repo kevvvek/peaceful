@@ -15,10 +15,10 @@ const App: React.FC = () => {
   useEffect(() => {
     const config: Phaser.Types.Core.GameConfig = {
       type: Phaser.CANVAS,
-      height: 1080,
-      width: 1920,
+      height: 660,
+      width: 500,
       scale: {
-        mode: Phaser.Scale.ScaleModes.RESIZE,
+        mode: Phaser.Scale.ScaleModes.FIT,
       },
       render: {
         pixelArt: true
